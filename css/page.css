@@ -2,6 +2,6 @@
     
 body {
     margin: 0;
-    overflow: scroll;
+    overflow-x: hidden;
     background-color: #010409;
 }
