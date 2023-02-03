@@ -1,0 +1,131 @@
+.main_table {
+    table-layout : fixed;
+
+    position: relative;
+    left: 5vw;
+    top: 3vh;
+    width: 90vw;
+    border-collapse: collapse;
+
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: medium;
+
+    user-select: text;
+}
+
+.main_table tr td {
+    border: 1px solid #0D1117;
+    height: 25px;
+}
+
+.main_table tr td input {
+    outline: none;
+    border: none;
+    width: 98%;
+    height: 100%;
+    background: transparent;
+
+    color: #ffffff;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.main_table tr td p {
+    margin: 0;
+
+    color: #ffffff;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: medium;
+}
+
+.main_table tr#titles {
+    user-select: none;
+}
+
+button {
+    position: relative;
+
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+
+    border-radius: 7px;
+
+    color: #ffffff;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+
+    transition: all 0.05s ease 0s;
+}
+
+.add_button {
+    border: 1px solid #363B42;
+    background-color: #21262D;
+
+    left: 6vw;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.add_button:hover {
+    cursor: pointer;
+    background-color: #30363D;
+    border-color: #8B949E;
+}
+
+.add_button:active {
+    background-color: #282E33;
+    border-color: #6E7681;
+}
+
+.delete_button {
+    border: 1px solid #363B42;
+    background-color: #21262D;
+
+    left: 6vw;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    color: #F85149;
+}
+
+.delete_button:hover {
+    cursor: pointer;
+    background-color: #DA3633;
+    border-color: #F55048;
+    color: #ffffff;
+}
+
+.delete_button:active {
+    background-color: #B62324;
+    border-color: #FF7B72;
+}
+
+.data {
+    position: relative;
+    margin-left: 6vw;
+
+    color: #ffffff;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.data p {
+    position: absolute;
+}
+
+.data p#standard_deviation {
+    margin-top: 45px;
+}

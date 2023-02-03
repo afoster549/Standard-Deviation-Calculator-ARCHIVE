@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.bmp">
+    <title>Standard Deviation Calculator</title>
+</head>
+<body>
+    <div id="nav_sidebar" class="sidebar">
+        <img id="home" onclick="window.location.href='https://123game.dev'" src="images/home.png" draggable="false">
+        <img id="github" onclick="window.location.href='https://github.com/123-Game/Standard-Deviation-Calculator'" src="images/logo_github.png" draggable="false">
+        <img id="hide" onclick="toggleSidebar()" src="images/left_arrow.png" draggable="false">
+    </div>
+    <table class="main_table">
+        <tr id="titles">
+            <td id="x">𝑥</td>
+            <td id="f">f</td>
+            <td id="fx">f𝑥</td>
+            <td id="x2">𝑥²</td>
+            <td id="fx2">f𝑥²</td>
+        </tr>
+        <tr id="row_1">
+            <td id="x"><input oninput="updateXtotal()"></td>
+            <td id="f"><input oninput="updateFtotal()"></td>
+            <td id="fx"><p></p></td>
+            <td id="x2"><p></p></td>
+            <td id="fx2"><p></p></td>
+        </tr>
+        <tr id="row_2">
+            <td id="x"><input oninput="updateXtotal()"></td>
+            <td id="f"><input oninput="updateFtotal()"></td>
+            <td id="fx"><p></p></td>
+            <td id="x2"><p></p></td>
+            <td id="fx2"><p></p></td>
+        </tr>
+        <tr id="totals">
+            <td id="x"><p></p></td>
+            <td id="f"><p></p></td>
+            <td id="fx"><p></p></td>
+            <td id="x2"><p></p></td>
+            <td id="fx2"><p></p></td>
+        </tr>
+    </table>
+    <button class="add_button" onclick="addRow()">Add row</button>
+    <button class="delete_button" onclick="deleteRow()">Delete row</button>
+    <div class="data">
+        <p id="mean">Mean:</p>
+        <p id="standard_deviation">(Standard Deviation) σ:</p>
+    </div>
+    <script src="js/sidebar.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/manager.js"></script>
+    <script src="js/mobile.js"></script>
+</body>
+</html>
