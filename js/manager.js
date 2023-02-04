@@ -40,6 +40,8 @@ function addRow() {
     row.appendChild(fx2)
 
     document.getElementById("totals").parentNode.insertBefore(row, document.getElementById("totals"))
+    
+    updateAll()
 }
 
 function deleteRow() {
@@ -48,4 +50,6 @@ function deleteRow() {
 
         document.getElementById(`row_${rowCount + 1}`).remove()
     }
+    
+    updateAll()
 }
