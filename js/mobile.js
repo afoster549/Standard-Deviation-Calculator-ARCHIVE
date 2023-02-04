@@ -19,6 +19,6 @@ const isMobile = {
     }
 }
 
-if (isMobile.any()) [
+if (isMobile.any()) {
     toggleSidebar()
-]
+}
